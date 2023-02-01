@@ -60,8 +60,9 @@ function Sidebar () {
                 </li>
             </ul>
         </div>
-        <div>
-
+        <div className='flex items-center m-2'>
+            <div className='w-5 h-5 b-0 m-2 cursor-poiner border border-gray-500 bg-white'></div>
+            <div className='w-5 h-5 b-0 m-2 cursor-poiner border border-gray-500 bg-gray-500'></div>
         </div>
     </div>
   )
