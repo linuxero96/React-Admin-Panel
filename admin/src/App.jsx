@@ -1,12 +1,6 @@
-/* eslint-disable react/react-in-jsx-scope */
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
 function App () {
-  const [count, setCount] = useState(0)
-
   return (
+    // eslint-disable-next-line react/react-in-jsx-scope
     <div className="App">
       Andres Diaz
     </div>

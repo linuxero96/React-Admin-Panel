@@ -5,9 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run build:css && vite build",
     "lint": "eslint . --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run watch:css && react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -17,12 +22,18 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "auto": "^10.37.6",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "prefixer": "^0.0.3",
+    "tailwindcss": "^3.2.4",
     "vite": "^4.0.0"
   }
 }
